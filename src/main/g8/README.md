@@ -3,7 +3,7 @@
 ## run
 
 ```shell
-docker-compose up -d
+docker compose up -d
 sbt server/run
 ```
 

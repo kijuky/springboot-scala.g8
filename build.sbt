@@ -1,4 +1,4 @@
-name := "springboot-scalajs.g8"
+name := "springboot-scala.g8"
 
 enablePlugins(ScriptedPlugin)
 

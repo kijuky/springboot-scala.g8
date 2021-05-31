@@ -1,4 +1,4 @@
-# SpringBoot-scala g8 template
+# SpringBoot-Scala g8 template
 
 ## Overall
 

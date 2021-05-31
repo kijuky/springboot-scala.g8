@@ -20,11 +20,11 @@ lazy val server = project
     libraryDependencies ++= Seq(
       "junit" % "junit" % "4.13.2",
       "org.scalatest" %% "scalatest" % "3.2.9",
-      "org.scalatestplus" %% "junit-4.13" % "3.2.9.0"
+      "org.scalatestplus" %% "junit-4-13" % "3.2.9.0"
     ).map(_ % Test),
     libraryDependencies ++= Seq(
       "org.springframework.boot" % "spring-boot-starter-web" % springVersion,
-      "org.springframework.boot" % "spring-boot-starter-data-jpq" % springVersion,
+      "org.springframework.boot" % "spring-boot-starter-data-jpa" % springVersion,
       "org.springframework.boot" % "spring-boot-starter-mustache" % springVersion,
       "org.flywaydb" % "flyway-core" % "7.9.1",
       "org.postgresql" % "postgresql" % "42.2.20",
