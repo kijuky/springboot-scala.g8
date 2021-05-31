@@ -1,5 +1,5 @@
 package $package$.shared
 
-object SharedMessages {
-  def itWorks = "It works!"
-}
+object SharedMessages:
+  def itWorks =
+    "It works!"

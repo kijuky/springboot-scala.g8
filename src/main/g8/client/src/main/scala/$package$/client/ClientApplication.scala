@@ -3,6 +3,5 @@ package $package$.client
 import $package$.shared.SharedMessages
 import org.scalajs.dom
 
-object ClientApplication extends App {
+@main def ClientApplication(args: String*): Unit =
   dom.document.getElementById("scalajsShoutOut").textContent = SharedMessages.itWorks
-}

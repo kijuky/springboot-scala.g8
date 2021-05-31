@@ -1,5 +1,5 @@
 ThisBuild / organization := "$organization$"
-ThisBuild / scalaVersion := "2.13.6"
+ThisBuild / scalaVersion := "3.0.0"
 ThisBuild / version := "0.1.0-SNAPSHOT"
 
 lazy val springVersion = "2.5.0"
@@ -38,7 +38,7 @@ lazy val client = project
   .enablePlugins(ScalaJSPlugin, ScalaJSWeb)
   .settings(
     scalaJSUseMainModuleInitializer := true,
-    libraryDependencies += "org.scala-js" %%% "scalajs-dom" % "1.1.0"
+    libraryDependencies += "org.scala-js" % "scalajs-dom_sjs1_2.13" % "1.1.0"
   )
 
 lazy val shared = crossProject(JSPlatform, JVMPlatform)
