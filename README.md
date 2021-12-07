@@ -2,12 +2,12 @@
 
 ## Overall
 
-- SpringBoot 2.5.0
+- SpringBoot 2.6.1
   - PostgreSQL + Flyway
   - mustache
-- Scala 3.0.0
+- Scala 3.1.0
   - scalatest
-- Scala.js 1.1.0
+- Scala.js 1.7.1
 
 ```
 sbt new kijuky/springboot-scala.g8 --branch scala3
