@@ -16,5 +16,5 @@ sbt new kijuky/springboot-scala.g8
 ## Test
 
 ```shell
-sbt scripted
+sbt g8Test
 ```
