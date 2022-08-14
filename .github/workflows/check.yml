@@ -10,6 +10,6 @@ jobs:
       - name: Setup Scala
         uses: olafurpg/setup-scala@v13
         with:
-          java-version: 'amazon-corretto@1.17.0-0.35.1'
+          java-version: openjdk@1.17.0
       - name: Scripted
         run: sbt g8Test
