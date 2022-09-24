@@ -1,8 +1,8 @@
 ThisBuild / organization := "$organization$"
-ThisBuild / scalaVersion := "2.13.8"
+ThisBuild / scalaVersion := "2.13.9"
 ThisBuild / version := "0.1.0-SNAPSHOT"
 
-lazy val springVersion = "2.7.2"
+lazy val springVersion = "2.7.4"
 
 lazy val root = (project in file("."))
   .aggregate(server, client, shared.jvm, shared.js)
@@ -19,15 +19,15 @@ lazy val server = project
     Runtime / managedClasspath += (Assets / packageBin).value,
     libraryDependencies ++= Seq(
       "junit" % "junit" % "4.13.2",
-      "org.scalatest" %% "scalatest" % "3.2.12",
-      "org.scalatestplus" %% "junit-4-13" % "3.2.12.0"
+      "org.scalatest" %% "scalatest" % "3.2.13",
+      "org.scalatestplus" %% "junit-4-13" % "3.2.13.0"
     ).map(_ % Test),
     libraryDependencies ++= Seq(
       "org.springframework.boot" % "spring-boot-starter-web" % springVersion,
       "org.springframework.boot" % "spring-boot-starter-data-jpa" % springVersion,
       "org.springframework.boot" % "spring-boot-starter-mustache" % springVersion,
-      "org.flywaydb" % "flyway-core" % "8.5.13",
-      "org.postgresql" % "postgresql" % "42.3.6",
+      "org.flywaydb" % "flyway-core" % "9.3.0",
+      "org.postgresql" % "postgresql" % "42.5.0",
       "org.slf4j" % "slf4j-simple" % "2.0.0-beta1",
       "javax.xml.bind" % "jaxb-api" % "2.3.1"
     )
