@@ -3,10 +3,6 @@
 ## run
 
 ```shell
-docker compose up -d
-sbt server/run
+docker-compose up -d
+sbt run
 ```
-
-## ref
-
-https://github.com/vmunier/play-scalajs.g8
